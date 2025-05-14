@@ -1,0 +1,15 @@
+
+.square {
+    width: 15px;
+    height: 15px;
+    background-color: #cf7777;
+    display: inline-block;
+    margin: 5px;
+}
+.square-filled {
+    width: 15px;
+    height: 15px;
+    background-color: #682323;
+    display: inline-block;
+    margin: 5px;
+}
