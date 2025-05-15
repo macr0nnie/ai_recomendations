@@ -4,5 +4,25 @@
     <div class="square">
         <div class="square-filled"></div>
     </div>
+    <div ngIf="checkIfSquare(0)" class="square">
+        <div class="square-filled"></div>
 </div>
+    <div ngIf="checkIfSquare(1)" class="square">
+        <div class="square-filled"></div>
+    </div>
+    <div ngIf="checkIfSquare(2)" class="square">
+        <div class="square-filled"></div>
+    </div>
+    <div ngIf="checkIfSquare(3)" class="square">
+        <div class="square-filled"></div>
+    </div>
 
+    <div class="squares-container">
+  <div
+    *ngFor="let square of squares"
+    class="square"
+    [class.filled]="square.filled"
+    (click)="MarkSquare(square.id)"
+  ></div>
+</div>
+<p>Filled: {{ total_filled_squares }} / Unfilled: {{ total_unfilled_squares }}</p>

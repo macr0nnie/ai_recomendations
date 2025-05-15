@@ -13,3 +13,21 @@
     display: inline-block;
     margin: 5px;
 }
+
+.squares-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px; /* adjust as needed */
+}
+.square {
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  background: #eee;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.square.filled {
+  background: #2196f3;
+}
